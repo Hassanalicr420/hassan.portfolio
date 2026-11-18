@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | Hassan Ali</title>
+<meta name="description" content="Contact Hassan Ali to discuss a web development project, collaboration, or opportunity.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="loader"><div class="spinner"></div></div>
+<div id="progress"></div>
+
+<header>
+  <nav class="container">
+    <a href="index.html" class="logo">Hassan<span>.</span></a>
+    <ul class="nav-links" id="primary-navigation">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="experience.html">Experience</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <button class="menu-btn" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">☰</button>
+  </nav>
+</header>
+
+<div class="page-hero">
+  <div class="container">
+    <h1>Get In <span class="gradient-text">Touch</span></h1>
+    <p>Have a project, question, or opportunity? I’d be glad to hear from you.</p>
+  </div>
+</div>
+
+<section>
+  <div class="container contact-grid">
+    <div class="reveal left">
+      <a class="c-item" href="tel:+923166725762"><div class="ic"><i class="fa-solid fa-phone"></i></div><div><small>Phone</small><b>0316 6725762</b></div></a>
+      <a class="c-item" href="https://wa.me/923166725762" target="_blank" rel="noopener"><div class="ic"><i class="fa-brands fa-whatsapp"></i></div><div><small>WhatsApp</small><b>Chat on WhatsApp</b></div></a>
+      <a class="c-item" href="mailto:hassanali.software@gmail.com"><div class="ic"><i class="fa-solid fa-envelope"></i></div><div><small>Email</small><b>hassanali.software@gmail.com</b></div></a>
+    </div>
+
+    <form id="contactForm" class="reveal right">
+      <div class="field"><label for="name">Your Name</label><input id="name" name="name" type="text" required placeholder="Enter your name"></div>
+      <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div>
+      <div class="field"><label for="subject">Subject</label><input id="subject" name="subject" type="text" placeholder="What would you like to discuss?"></div>
+      <div class="field"><label for="message">Message</label><textarea id="message" name="message" required placeholder="Tell me a little about your project..."></textarea></div>
+      <button class="btn btn-primary" type="submit">Send Message ✉️</button>
+      <p id="formMsg" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+<footer><div class="container">© 2026 Hassan Ali. All rights reserved.</div></footer>
+<button id="toTop" aria-label="Back to top">↑</button>
+<script src="js/main.js"></script>
+</body>
+</html>
